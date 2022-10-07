@@ -13,8 +13,8 @@ const routes = require('./routes/index');
 const { PORT = 3000 } = process.env;
 
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // за 15 минут
-  max: 100, // максимум 100 запросов с одного IP
+  windowMs: 15 * 60 * 1000,
+  max: 100,
 });
 
 mongoose.connect('mongodb://localhost:27017/bitfilmsdb', {
