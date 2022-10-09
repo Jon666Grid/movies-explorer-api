@@ -27,7 +27,6 @@ const cardSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (v) => isURL(v),
-      message: 'Неправильный формат URL',
     },
   },
   trailerLink: {
@@ -35,7 +34,6 @@ const cardSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (v) => isURL(v),
-      message: 'Неправильный формат URL',
     },
   },
   thumbnail: {
@@ -43,7 +41,6 @@ const cardSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (v) => isURL(v),
-      message: 'Неправильный формат URL',
     },
   },
   owner: {
