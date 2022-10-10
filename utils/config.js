@@ -1,4 +1,4 @@
-const MONGO_URL_DEV = 'mongodb://127.0.0.1:27017/bitfilmsdb';
+const MONGO_URL_DEV = 'mongodb://127.0.0.1:27017/moviesdb';
 const JWT_SECRET_DEV = 'dev-secret';
 
 module.exports = {
