@@ -5,8 +5,9 @@ const BadRequestError = require('../errors/badRequest');
 const { MESSAGES } = require('../utils/constants');
 
 module.exports.getMovies = async (req, res, next) => {
+  const owner = req.user._id;
   try {
-    const movies = await Movie.find({});
+    const movies = await Movie.find({ owner });
     res.send(movies);
   } catch (e) {
     next(e);
